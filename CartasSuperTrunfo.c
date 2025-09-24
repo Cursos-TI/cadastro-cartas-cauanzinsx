@@ -1,49 +1,29 @@
-#include <stdio.h>
-
+ #include <stdio.h>
 
 int main() {
-  
-  // VARIAVEIS PARA A CARTA 1 ( SAO_PAULO )
+    int populacao_sao_paulo = 46000000;
+    double pib_sao_paulo = 3.5;
+    double area_sao_paulo = 248219.485;
+    int pontos_turisticos_sao_paulo = 7;
 
-  char estado_sao_paulo;
-  char codigo_da_carta[]="A01";
-  char nome_da_cidade[]="sao paulo";
-  int populacao_sao_paulo;
-  float area_sao_paulo;
-  float PIB_sao_paulo;
-  int ponto_turistico_sao_paulo;
+    int populacao_bahia = 14800000;
+    double pib_bahia = 482.8;
+    double area_bahia = 564733.00;
+    int pontos_turisticos_bahia = 8;
 
-  // VARIAVEIS PARA A CARTA 2 ( BAHIA )
+    printf("\nCarta 1 - Sao paulo\n");
+    printf("Populacao: %d\n", populacao_sao_paulo);
+    printf("PIB: %.2lf trilhoes de reais\n", pib_sao_paulo);
+    printf("Area: %.2lf km²\n", area_sao_paulo);
+    printf("Pontos turisticos: %d\n", pontos_turisticos_sao_paulo);
+    printf("Pontos turisticos principais: MASP, Avenida Paulista, Parque Ibirapuera, Mercado Municipal, Pinacoteca, Museu do Futebol, Catedral da Se\n");
 
-  char estado_Bahia;
-  char codigo_da_carta[]="B01";
-  char nome_da_cidade[]="fortaleza";
-  int populacao_bahia;
-  float area_bahia;
-  float PIB_bahia;
-  int ponto_turistico_bahia;
+    printf("\nCarta 2 - Bahia\n");
+    printf("Populacao: %d\n", populacao_bahia);
+    printf("PIB: %.2lf bilhoes de reais\n", pib_bahia);
+    printf("Area: %.2lf km²\n", area_bahia);
+    printf("Pontos turisticos: %d\n", pontos_turisticos_bahia);
+    printf("Pontos turisticos principais: Pelourinho, Farol da Barra, Elevador Lacerda, Mercado Modelo, Chapada Diamantina, Praia do Forte, Morro de Sao Paulo, Porto Seguro\n");
 
-  // DADOS PARA A CARTA 1 
-  
-  printf(" --- sao paulo ---\n");
-  printf("digite a população de sao paulo:\n");
-  scanf("%d, &populacao:\n");
-  printf("digite a area de sao paulo:\n");
-  scanf("%f, &area_sao_paulo:\n");
-  printf("digite o PIB de sao paulo:\n");
-  scanf("%f, &PIB_sao_paulo:\n");
-  printf("ponto turistico de sao paulo: Avenida Paulista\n");
-
-  // DADOS PARA A CARTA 2
-
-  printf(" --- Bahia ---\n");
-  printf("digite a população de Bahia:\n");
-  scanf("%d, &populacao:\n");
-  printf("digite a area de Bahia:\n");
-  scanf("%f, &area_bahia:\n");
-  printf("digite o PIB de Bahia:\n");
-  scanf("%f, &PIB_Bahia:\n");
-  printf("ponto turistico de Bahia: Praia do forte\n");
-
-return 0;
-} 
+    return 0;
+}
